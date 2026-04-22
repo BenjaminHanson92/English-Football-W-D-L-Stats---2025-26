@@ -1,0 +1,26 @@
+This is a simple analysis of the strength of home advantage in each of the top 4 divisions of English football in the 2025/26 season.
+Playing at home is well known to be an advantage in professional football and bookmakers and other analysts factor this into their thinking. This mini-project shows the differences in home advantage between these 4 leagues as implied by results in the 2025/26 season.
+
+CSV files downloaded from https://www.football-data.co.uk/
+Comprehensive match stats (shots, corners, cards etc) and pre-game betting lines for every completed game of the current 2025-26 season.
+File sizes of between 170KB and 270KB.
+
+
+I removed the vast majority of columns from the data, leaving the ones I needed for my analysis. 
+
+Data cleaning: 	- Checked for duplicates or missing values			
+		- Replaced abbreviations for easier understanding	
+		- Added colour and bold font to header row
+
+Analysis Conducted:	- I pasted each of the 4 cleaned data sets together into a new spreadsheet
+			- Built a table on a new sheet 
+			- Used COUNTIF function to find the total occurrences of HOME WIN, AWAY WIN and DRAW in each league
+			- Simple calculation to populate the PERCENTAGE column
+			- Pivot table using 'FULL TIME RESULT' in ROWS, 'DIVISION' in COLUMNS and 'RESULT' for VALUES
+			- Created simple dashboard with a pie chart, clustered column and stacked column charts.
+
+Key Findings:		- As expected, thew data show that home advantage is a significant advantage over all 4 divisions of English football.
+			- League one is something of an outlier - with a home win percentage of 48.1%. Compared to ~42% for the other divisions. 
+			  This is larger than the expected Standard Error of ±5%.
+
+			- The next step is to compare this with the equivalent data from other recent seasons, to see if this is part of a longer 			  term trend. 
